@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block title %}Signin page{% endblock %} {% block content %}
+
+<section class="sign-page">
+    <div class="sign">
+        <div class="log-title">
+            <h1>SignIn</h1>
+        </div>
+        <div class="log-form">
+            <form action="" method="post" name="form">
+                <label for="username" class="label">Username :</label>
+                <input type="text" name="username-login" class="input" required>
+                <label for="password" class="label">Password :</label>
+                <input type="password" name="password-login" class="input" required>
+                <input type="submit" value="submit" class="btn-submit">
+            </form>
+            <p>Don't have an account? <a href="/signuppage">Sign up</a></p>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

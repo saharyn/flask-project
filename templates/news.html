@@ -1,0 +1,30 @@
+{% extends "layout.html" %} {% block title %}more news{% endblock %} {% block content %}
+
+<section class="news-page">
+    <div class="news">
+        <div class="newsstyle news-title">
+            <a href="">
+                <h2>{{single_news.title}}</h2>
+            </a>
+        </div>
+        <div class="newsstyle news-da">
+            <a href="">
+                <span class="align">{{single_news.created_at}} &nbsp;|</span>
+            </a>
+            <a href="">
+                <span class="align">{{single_news.category}} &nbsp;|</span>
+            </a>
+            <a href="">
+                <span class="align">{{single_news.author.firstName}} {{single_news.author.lastName}}</span>
+            </a>
+        </div>
+        <div class="newsstyle news-content">
+            <p>
+                {{single_news.body}}
+            </p>
+        </div>
+        <p class="tags">keywords : <span>{{single_news.keywords}}</span></p>
+    </div>
+</section>
+
+{% endblock %}

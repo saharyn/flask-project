@@ -1,0 +1,1018 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    background: #e0e0d1;
+    font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    min-width: 960px;
+    height: 180px;
+    background: #8C1515;
+    background: -webkit-linear-gradient( #de2121, #8C1515);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #de2121, #8C1515);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #de2121, #8C1515);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #de2121, #8C1515);
+    /* Standard syntax */
+    color: #fff;
+    box-shadow: 2px 5px 15px #888888;
+    border-radius: 2px;
+}
+
+header .top-head {
+    display: block;
+    height: 120px;
+    margin: auto;
+    width: 960px;
+}
+
+header .top-head a:link,
+header .top-head a:visited {
+    color: #fff;
+}
+
+header .top-head .logo-left {
+    width: 60%;
+    float: left;
+    height: inherit;
+}
+
+header .top-head .logo-left .logo {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin: 10px;
+}
+
+header .top-head .logo-left h2 {
+    padding-top: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+header .top-head .logo-left h3 {
+    padding-top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+header .top-head .logo-right {
+    width: 40%;
+    height: inherit;
+    float: left;
+}
+
+header .top-head .logo-right ul {
+    margin-right: 35px;
+}
+
+header .top-head .logo-right ul li {
+    padding: 0px 7px;
+    font-size: 20px;
+    margin-right: 2px;
+    float: right;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    height: 32px;
+}
+
+header .top-head .logo-right ul li a:link,
+header .top-head .logo-right ul li a:visited {
+    color: #fff;
+}
+
+header .top-head .logo-right ul li a i {
+    color: #8c8c8c;
+    font-size: 25px;
+    margin: 2px auto;
+}
+
+input[type=search] {
+    border-radius: 5px;
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+    font-size: 12px;
+    color: #e6e6e6;
+    margin-top: 1px;
+    background: #e6e6e6 url(../image/search-icon.png) no-repeat 7px center;
+    border: none;
+    height: 30px;
+    width: 15px;
+    padding: 0px 8px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+input[type=search]:focus {
+    width: 130px;
+    background: #ebebe0;
+    padding: 0px 15px;
+    color: #666;
+}
+
+header .under-head {
+    height: 59px;
+    margin: 1px auto;
+    width: 960px;
+    border-radius: 5px;
+    position: relative;
+}
+
+header .under-head .head-nav {
+    height: 59px;
+    width: inherit;
+    border-radius: 5px;
+}
+
+header .under-head .head-nav .menu {
+    text-align: center;
+    display: inline;
+    width: inherit;
+    height: inherit;
+    
+}
+
+header .under-head .head-nav .menu a li {
+    box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    float: left;
+    display: inline;
+    text-align: center;
+    position: relative;
+    margin: 0px 2px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background .5s, border .3s;
+    width: 125px;
+    height: 30px;
+    padding: 14px 15px;
+}
+
+header .under-head .head-nav .menu a:link,
+header .under-head .head-nav .menu a:visited {
+    color: #e6e6e6;
+}
+
+header .under-head .head-nav .menu li:hover {
+    background: #881414;
+}
+
+.wrapper {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    width: 960px;
+    height: 1700px;
+    background: #e0e0d1;
+    position: relative;
+}
+
+.wrapper .slider {
+    width: inherit;
+    height: 500px;
+    position: relative;
+    display: block;
+}
+
+.wrapper .slider .upper {
+    width: inherit;
+    height: 300px;
+    margin: auto;
+}
+
+#container {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    border-radius: 10px;
+}
+
+#img-slide {
+    width: 700px;
+    height: 300px;
+    top: 0;
+    left: 130px;
+    position: absolute;
+    display: inline-block;
+}
+
+#img {
+    width: inherit;
+    height: 300px;
+    position: absolute;
+}
+
+.holder {
+    background: #8C1515;
+    background: -webkit-linear-gradient( #de2121, #8C1515);
+    background: -o-linear-gradient( #de2121, #8C1515);
+    background: -moz-linear-gradient( #de2121, #8C1515);
+    background: linear-gradient( #de2121, #8C1515);
+    position: absolute;
+    width: 130px;
+    height: inherit;
+    top: 0px;
+    display: inline-block;
+}
+
+#left_holder {
+    left: 0px;
+    float: left;
+}
+
+#right_holder {
+    right: 0px;
+    float: right;
+}
+
+.arrow {
+    height: 20px;
+    width: 20px;
+    top: 130px;
+    position: relative;
+    cursor: pointer;
+}
+
+.left {
+    left: 20px;
+    float: left;
+}
+
+.right {
+    float: right;
+    right: 20px;
+}
+
+.wrapper .slider .down {
+    width: inherit;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.wrapper .slider .down .in-down {
+    width: 240px;
+    height: 200px;
+}
+
+.wrapper .slider .down .in-down:hover {
+    top: -20px;
+    cursor: pointer;
+    position: relative;
+    height: 220px;
+}
+
+.wrapper .slider .down .one {
+    background-color: #de2121;
+}
+
+.wrapper .slider .down .two {
+    background-color: #b11b1b;
+}
+
+.wrapper .slider .down .three {
+    background-color: #8c1515;
+}
+
+.wrapper .slider .down .four {
+    background-color: #6f1111;
+}
+
+.wrapper .slider .down p i {
+    font-size: 80px;
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper .slider .down p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper .content {
+    margin-top: 30px;
+    width: inherit;
+    height: 1150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: center;
+    text-align: left;
+}
+
+.wrapper .content .leftside {
+    height: 1100px;
+    width: 200px;
+    padding: 21px;
+    background-color: white;
+    border-right: 1px solid #A9A9A9;
+}
+
+.headside {
+    width: 190px;
+    float: left;
+    height: 20px;
+    padding: 6px;
+    text-align: left;
+    background-color: #8c1515;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.wrapper .content .leftside .inner-side {
+    width: 195px;
+    float: left;
+    height: 165px;
+    background-color: #325d90;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 25px;
+    border: 1px solid #595b5b;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.wrapper .content .leftside .inner-side a img {
+    width: 185px;
+    float: left;
+    height: 155px;
+    border: 4px solid #fff;
+    border-radius: 3px;
+}
+
+.inner-side-bottom {
+    font-family: 'Merriweather', serif !important;
+    width: inherit;
+    float: left;
+    height: 25px;
+    padding: 2px;
+    text-align: left;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.inner-side-bottom p a:link,
+.inner-side-bottom p a:visited {
+    text-decoration: none;
+    color: #2c0707;
+    padding: 2px;
+}
+
+.wrapper .content .middle {
+    height: 1100px;
+    padding: 22px;
+    width: 420px;
+    margin: 0px 4px;
+    background-color: #fff;
+}
+
+.wrapper .content .middle .headside-two {
+    width: inherit;
+    float: left;
+    height: 20px;
+    padding: 6px;
+    text-align: left;
+    background-color: #8c1515;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.wrapper .content .middle .inner-side-two {
+    width: inherit;
+    float: left;
+    height: 500px;
+    padding: 6px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.wrapper .content .middle .inner-side-two .news {
+    width: inherit;
+    height: 170px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #ffffff;
+    margin-top: 4px;
+}
+
+.content .middle .inner-side-two .news h4 {
+    padding: 4px;
+}
+
+.content .middle .inner-side-two .news h6 {
+    color: #a5a7a7;
+    padding: 2px 4px;
+}
+
+.content .middle .inner-side-two .news p {
+    margin-top: 2px;
+    padding: 4px;
+    font-size: 15px;
+    color: #595b5b;
+    overflow: hidden;
+}
+
+.content .middle .inner-side-two .news h4 a:link,
+.content .middle .inner-side-two .news h4 a:visited {
+    text-decoration: none;
+    color: #2c0707;
+}
+
+.wrapper .content .rightside {
+    height: 1100px;
+    padding: 20px 1px;
+    width: 240px;
+    border-left: 1px solid #A9A9A9;
+    background-color: white;
+}
+
+.rightside .inner-right {
+    width: 210px;
+    height: 200px;
+    padding: 15px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #fff;
+    margin-top: 5px;
+    border-bottom: 1px solid #595b5b;
+}
+
+.bottomside {
+    width: 190px;
+    float: left;
+    height: 130px;
+    padding: 6px;
+    text-align: left;
+    background-color: #fff;
+    font-size: 14px;
+    color: #4c4d4d;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.bottomside p {
+    margin-top: 5px;
+}
+
+.bottomside p a:link,
+.bottomside p a:visited {
+    text-decoration: none;
+    color: #4c4d4d;
+}
+
+.bottomside p a i {
+    font-size: 12px;
+}
+
+footer {
+    overflow: hidden;
+    margin: 10px auto 0px;
+    width: 100%;
+    min-width: 960px;
+    height: 180px;
+    background: #8C1515;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    color: #fff;
+}
+
+footer .footer-aside {
+    width: 280px;
+    height: inherit;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-aside .cap-social {
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer .footer-aside .cap-social p {
+    padding: 7px 7px;
+}
+
+footer .footer-aside .social {
+    width: 200px;
+    height: 70px;
+    margin: 2px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-aside .social button {
+    position: relative;
+    margin: 2px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin-right: 3px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+footer .footer-aside .social button:hover {
+    color: #bfbfbf;
+}
+
+footer .footer-aside .logo-footer {
+    width: 250px;
+    margin: 2px;
+    height: 120px;
+}
+
+footer .footer-aside .logo-footer .logo {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    margin: 0px 70px;
+    cursor: pointer;
+}
+
+footer .footer-aside .ads {
+    width: 230px;
+    height: 200px;
+    margin: 20px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+footer .footer-aside .ads p {
+    padding: 5px;
+}
+
+footer .footer-middle {
+    width: 400px;
+    height: inherit;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer .footer-middle .listside {
+    width: 300px;
+    height: 110px;
+    padding: 6px;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+footer .footer-middle .listside p {
+    margin-top: 5px;
+}
+
+footer .footer-middle .listside p a:link,
+.listside p a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-middle .listside p a i {
+    font-size: 12px;
+}
+
+footer .footer-middle .intro {
+    margin-top: 8px;
+    width: 350px;
+    height: 25px;
+    opacity: 0.7;
+}
+
+footer .footer-middle .intro p {
+    padding: 5px;
+}
+
+
+/* news page */
+
+.news-page {
+    width: 960px;
+    margin: auto;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.news-page .news {
+    width: 460px;
+    height: 500px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.news-page .news .newsstyle {
+    padding: 10px;
+    width: inherit;
+}
+
+.news-page .news .news-title {
+    text-align: left;
+    height: 40px;
+    background-color: #8c1515;
+    font-size: 14px;
+}
+
+.news-page .news .news-title a:link,
+.news-page .news .news-title a:visited {
+    color: #f8f2f2;
+}
+
+.news-page .news .news-da {
+    height: 10px;
+    font-size: 13px;
+    text-align: left;
+}
+.news-page .news .news-da a:link,
+.news-page .news .news-da a:visited {
+    color: #a5a7a7;
+}
+
+.news-page .news .news-content {
+    overflow: hidden;
+    height: 400px;
+    background-color: beige;
+    color: #595b5b;
+}
+.tags{
+    color: #8c1515;
+    font-size: 16px;
+    margin: 5px auto;
+}
+
+/* addpost page */
+
+.addpost-page {
+    font-family: 'Open Sans', sans-serif;
+    width: 960px;
+    margin: 10px auto;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.addpost-page .addpost {
+    display: flex;
+    align-items: center;
+    width: 460px;
+    padding: 20px;
+    margin: 20px auto;
+    height: 800px;
+    background: #b81d18;
+    background: -webkit-linear-gradient(#b81d18, #8c1515);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b81d18, #8c1515);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b81d18, #8c1515);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#b81d18, #8c1515);
+    flex-flow: column;
+    justify-content: space-around;
+    border-radius: 2px;
+    box-shadow: 12px 10px 30px 0px #888888;
+}
+
+.addpost-page .addpost .form {
+    width: inherit;
+    height: 700px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: -13px;
+}
+
+.post-content {
+    width: 100%;
+    color: #acacac;
+    font-size: 15px;
+    height: 200px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, .2);
+    resize: none;
+}
+
+.post-content:focus {
+    background: rgba(255, 255, 255, .3);
+    border: none;
+    -webkit-transition: background .5s ease;
+    transition: background .5s ease;
+}
+
+
+/* signin & signup page */
+
+.sign-page {
+    font-family: 'Open Sans', sans-serif;
+    width: 960px;
+    margin: 10px auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-page .sign {
+    display: flex;
+    align-items: center;
+    width: 460px;
+    padding: 20px;
+    margin: 20px auto;
+    height: 500px;
+    background: #b81d18;
+    background: -webkit-linear-gradient(#b81d18, #8c1515);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b81d18, #8c1515);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b81d18, #8c1515);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#b81d18, #8c1515);
+    flex-flow: column;
+    justify-content: space-around;
+    border-radius: 2px;
+    box-shadow: 12px 10px 30px 0px #888888;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.log-title {
+    color: #fff;
+    padding: 5px;
+    width: inherit;
+    height: 30px;
+    text-align: left;
+}
+
+.sign-page .sign .log-form {
+    width: inherit;
+    height: 400px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: #fff;
+    display: block;
+}
+
+.input {
+    width: 100%;
+    color: #acacac;
+    font-size: 14px;
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, .2);
+}
+
+.input:focus {
+    background: rgba(255, 255, 255, .3);
+    border: none;
+    -webkit-transition: background .5s ease;
+    transition: background .5s ease;
+}
+
+.btn-submit {
+    float: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #c81e1e;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background-color: #e95f5f;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+.sign-page .sign .log-form p {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+}
+
+.sign-page .sign .log-form p a:link,
+.sign-page .sign .log-form p a:visited {
+    color: #ee7777;
+    font-weight: 700;
+}
+
+/* about page */
+.about-page{
+   font-family: 'Merriweather', serif;
+    width: 960px;
+    margin: 5px auto;
+    height: 1200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.about-page .about-ce {
+    width: 900px;
+    margin: 5px auto;
+    height: 320px;
+}
+.about-page .about-ce .head {
+    height: 40px;
+    padding: 6px;
+    text-align: left;
+    background-color: #8c1515;
+    font-size: 30px;
+    color: #fff;
+    text-indent: 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+.about-page .about-ce .content {
+    overflow: hidden;
+    height: 250px;
+    padding: 6px;
+    text-align: left;
+    background-color: #fff;
+    font-size: 18px;
+    color: #595b5b;
+}
+.about-page .about-ce .content p{
+    margin-top: 15px;
+}
+.about-page .member{
+    width: inherit;
+    margin: 5px auto;
+    height: 710px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about-page .member .head{
+    height: 40px;
+    width: 950px;
+    padding: 6px;
+    text-align: left;
+    background-color: #8c1515;
+    font-size: 30px;
+    color: #fff;
+    text-indent: 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+.about-page .member .botton{
+    height: 650px;
+    width: 960px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+.about-page .member .botton .mem{
+    width: 210px;
+    height: 290px;
+    background-color: #8c1515;
+    border-radius: 3px;
+}
+.about-page .member .botton .mem .mem-pic{
+    height: 190px;
+    width: 190px;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+.about-page .member .botton .mem .mem-pic img{
+    height: 190px;
+    width: 190px;
+    text-align: center;
+    border-radius: 3px;
+}
+.hover {
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    opacity: 0;
+    background: #b3b0b0;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+	border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    cursor: pointer;
+}
+.hover:hover {
+    opacity:0.7;
+}
+.about-page .member .botton .mem .mem-cap{
+    overflow: hidden;
+    height: 80px;
+    width: 190px;
+    text-align: left;
+    margin: 2px auto;
+    text-indent: 5px;
+    color: #d6d6d6;
+}
+.about-page .member .botton .mem .mem-cap p{
+    margin: 5px;
+    font-size: 16px;
+}
+.about-page .member .botton .mem .mem-cap .name{
+    text-align: center !important;
+    font-size: 20px;
+    margin: 5px;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CE faculty-{% block title %}{% endblock %}</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="sahar yousefnezhad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Department of Computer Engineering">
+    <meta name="keywords" content="Department,Computer,Engineering,CE,University,Technology">
+    <meta property="og:title" content="CE University of Technology" />
+    <meta property="og:type" content="Computer engineering university news" />
+    <meta property="og:description" content="Department of Computer Engineering" />
+    <meta property="og:image" content="static/image/img1.jpg" />
+
+    <link rel="shortcut icon" href="{{url_for('static',filename='image/ic.ico')}}" type="image">
+    <link href="{{url_for('static',filename='css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    <script src="{{url_for('static',filename='js/jquery-1.11.3.min.js')}}"></script>
+
+    <script>
+        var imagecount = 1;
+        var total = 4;
+
+        function slide(x) {
+            var image = document.getElementById('img');
+            imagecount = imagecount + x;
+            if (imagecount > total) {
+                imagecount = 1;
+            }
+            if (imagecount < 1) {
+                imagecount = total;
+            }
+            image.src = "static/image/img" + imagecount + ".jpg";
+
+        }
+        window.setInterval(function slide1() {
+            var image = document.getElementById('img');
+            imagecount = imagecount + 1;
+            if (imagecount > 4) {
+                imagecount = 1;
+            }
+            if (imagecount < 1) {
+                imagecount = total;
+            }
+            image.src = "static/image/img" + imagecount + ".jpg";
+        }, 4000);
+    </script>
+
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+
+        <div class="top-head">
+            <a href="/">
+                <div class="logo-left">
+                    <img class="logo" src="{{url_for('static',filename='image/pcscreen.png')}}">
+                    <h2>
+                        Department of Computer Engineering
+                    </h2>
+                    <h3>
+                        CE University of Technology
+                    </h3>
+                </div>
+            </a>
+
+            <div class="logo-right">
+                <ul>
+
+                    <li style="background-color: #e6e6e6;">
+                        <a href="/signinpage">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <form>
+                                <input type="search" placeholder="Type and hit enter">
+                            </form>
+                        <a/>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="under-head">
+            <nav class="head-nav">
+                <ul class="menu">
+
+                    <a href="/aboutpage">
+                        <li>About CE</li>
+                    </a>
+                    <a href="">
+                        <li>Research</li>
+                    </a>
+                    <a href="">
+                        <li>Courses&nbsp<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="">
+                        <li>Facilities&nbsp<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="">
+                        <li>Forms</li>
+                    </a>
+                    <a href="">
+                        <li>Facilities</li>
+                    </a>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    {% block content %}{% endblock %}
+
+
+    <footer>
+        <div class="footer-aside">
+            <div class="cap-social">
+                <p>Our Official Social Network</p>
+            </div>
+            <div class="social">
+                <button class="button-social" style="background-color: #1da1f2;">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</button>
+                <button class="button-social" style="background-color:  #ec1a13;">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</button>
+                <button class="button-social" style="background-color: #0088cc;">
+					<i class="fa fa-paper-plane" aria-hidden="true"></i>
+				</button>
+                <button class="button-social" style="background-color: #c71610;">
+					<i class="fa fa-google-plus" aria-hidden="true"></i>
+				</button>
+                <button class="button-social" style="background-color: #0077b5;">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</button>
+            </div>
+            <div class="logo-footer">
+                <img class="logo" src="{{url_for('static',filename='image/ic.png')}}">
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="listside">
+                <p><a href="/aboutpage"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+						About CE</a></p>
+                <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+						Courses </a></p>
+                <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+						Programs</a></p>
+                <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+						Archives</a></p>
+                <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+						More Links…</a></p>
+            </div>
+            <div class="intro">
+                <p><i class="fa fa-copyright" aria-hidden="true"></i> copyright - Department of Computer Engineering
+                </p>
+            </div>
+        </div>
+        <div class="footer-aside">
+            <div class="ads">
+                <p>
+                    Department of Computer Engineering, CE University of Technology, first Ave., Rasht, Iran
+                </p>
+                <p>Tel : +981324256728</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

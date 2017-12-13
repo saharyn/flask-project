@@ -1,0 +1,141 @@
+{% extends "layout.html" %} {% block title %}home page{% endblock %} {% block content %}
+<section class="wrapper">
+
+    <div class="slider">
+        <div class="upper">
+            <div id="container">
+                <div id="img-slide">
+                    <img id="img" src="{{url_for('static',filename='image/img1.jpg')}}" />
+                </div>
+                <div id="left_holder" class="holder">
+                    <img onClick="slide(-1)" class="left arrow" src="{{url_for('static',filename='image/left.png')}}" />
+                </div>
+                <div id="right_holder" class="holder">
+                    <img onClick="slide(1)" class="right arrow" src="{{url_for('static',filename='image/right.png')}}" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="down">
+
+
+            <div class="in-down one">
+                <p><i class="fa fa-info-circle" aria-hidden="true"></i></p>
+                <a href="/aboutpage"><p>About CE</p></a>
+            </div>
+
+
+            <div class="in-down two">
+                <p><i class="fa fa-file-text" aria-hidden="true"></i></p>
+                <p>Research</p>
+            </div>
+            <div class="in-down three">
+                <p><i class="fa fa-book" aria-hidden="true"></i></p>
+                <p>Programs & Courses</p>
+            </div>
+            <div class="in-down four">
+                <p><i class="fa fa-users" aria-hidden="true"></i></p>
+                <p>People</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="leftside">
+            <div class="headside">
+                <p>Photo Albums</p>
+                <div class="inner-side">
+                    <a href="">
+                        <img src="{{url_for('static',filename='image/11.jpg')}}">
+                    </a>
+                </div>
+                <div class="inner-side">
+                    <a href="">
+                        <img src="{{url_for('static',filename='image/12.jpg')}}">
+                    </a>
+                </div>
+                <div class="inner-side-bottom">
+                    <p><a href="">See All ...</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="headside-two">
+                <span style="float: left;">News</span>
+                <span style="float: right;">
+                            <a href=""><img src="{{url_for('static',filename='image/left.png')}}"></a>
+                            <a href=""><img src="{{url_for('static',filename='image/right.png')}}"></a>
+                        </span>
+            </div>
+            <div class="inner-side-two">
+                {% for single_news in news %}
+                <div class="news">
+                    <h4>
+                        <a href="readMore/{{single_news.id}}">{{single_news.title}}</a>
+                    </h4>
+                    <h6>
+                        date : {{single_news.created_at}}
+                        <span>&nbsp;|&nbsp;</span>                     
+                        <span>category : {{single_news.category}}</span>
+                        <span>&nbsp;|&nbsp;</span>   
+                        <span>Author : {{single_news.author.firstName}} {{single_news.author.lastName}}</span>
+                    </h6>
+
+                    <p>
+                        {{single_news.body | truncate(300)}}
+                    </p>
+                </div>
+                {% endfor %}
+                
+            </div>
+
+        </div>
+
+        <div class="rightside">
+            <div class="inner-right">
+                <div class="headside">
+                    <p>Events</p>
+                </div>
+                <div class="bottomside">
+                    <p>No events have been added yet!</p>
+                </div>
+            </div>
+            <div class="inner-right">
+                <div class="headside">
+                    <p>Useful Links</p>
+                </div>
+                <div class="bottomside">
+                        <p><a href="/aboutpage"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            About CE</a></p>
+                    <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            Syllabus</a></p>
+                    <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            Holding classes</a></p>
+                    <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            Introducing the group</a></p>
+                    <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            News</a></p>
+                </div>
+            </div>
+            <div class="inner-right" style="border-bottom: none;">
+                <div class="headside">
+                    <p>Archives</p>
+                </div>
+                <div class="bottomside">
+                    <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            October 2017</a></p>
+                    <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            September 2016</a></p>
+                    <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            May 2015</a></p>
+                    <p><a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            August 2014</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

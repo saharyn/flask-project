@@ -1,0 +1,40 @@
+{% extends "layout.html" %} {% block title %}Add Post page{% endblock %} {% block content %}
+
+
+<section class="addpost-page">
+
+    <div class="addpost">
+        <div class="log-title">
+            <h1>Add New Post</h1>
+        </div>
+        <div class="form">
+            <form action="addpostpage" method="POST">
+                <label for="title" class="label">title :</label>
+                <input type="text" name="title-post" class="input">
+                <label for="created_at" class="label">created date :</label>
+                <input type="date" name="created_at" class="input">
+                <label for="author" class="label">author :</label>
+                <input type="number" name="author-post" class="input">
+                <label for="category" class="label">category :</label>
+                <input type="text" name="category" class="input">
+                <label for="keywords" class="label">keywords :</label>
+                <input type="text" name="keywords" class="input">
+                <label for="post-body" class="label">post content :</label>
+                <textarea name="post-body" class="post-content"></textarea>
+                <input type="submit" value="add new post" class="btn-submit">
+            </form>
+        </div>
+    </div>
+    <!--
+			update date : <br>
+			<input type="date" name="updatedate" required><br>
+			
+			description : <br>
+			<input type="text" name="description" required><br>
+		-->
+
+
+
+</section>
+
+{% endblock %}
